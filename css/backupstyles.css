@@ -1,0 +1,209 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left:  0;
+	width: 200px;
+}
+.menu {
+	margin-bottom:  10px;
+}
+.menu > li {
+	position: relative;
+	vertical-align: top;
+	display: inline-block;
+}
+.menu > li:hover ul {
+	display: block;
+}
+.menu li:hover a {
+	color: red;
+}
+.barra {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.barra a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.barra img {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+.logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+.logo li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.logo a {
+    color: darkred;
+    font-size: 20px;
+    text-decoration: none;
+}
+.hero {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+    background-color: lightgray;
+    border-radius: 15px;
+}
+h1 {
+    color: darkred;
+    font-size: 48px;
+    text-decoration: none;
+    text-align: center;
+}
+h2 {
+    color: darkred;
+    font-size: 36px;
+    text-decoration: none;
+    text-align: center;
+}
+h3 {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+}
+.descripcion {
+    color: #333333;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+}
+.tradicion {
+    color: #333333;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: left;
+}
+.ver-productos {
+    background-color: darkred;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 40px;
+}
+.ver-productos a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+.foto-principal {
+    padding: 40px;
+}
+.secundaria {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 20px;
+    background-color: white;
+}
+#productos {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 20px;
+    background-color: white;
+}
+.p1 {
+    background-color: darkred;
+    border-radius: 15px;
+}
+.p1 img {
+    padding: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.sub-producto {
+    font-style: italic;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+.precio {
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.anadir {
+    background-color: white;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: darkred;
+}
+.anadir a {
+    color: darkred;
+    text-decoration: none;
+}
+footer {
+    display: flex;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-top: 20px;
+}
+.copyright {
+    font-size: 16px;
+    text-decoration: none;
+    color: lightgray;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.subtitulo-2 {
+    color: grey;
+    font-size: 21px;
+    text-decoration: none;
+    text-align: center;
+}
+.cursiva {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+.formulario {
+    color: #333333;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: left;
+}
