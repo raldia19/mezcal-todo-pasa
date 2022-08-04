@@ -33,7 +33,8 @@ ul ul {
     text-decoration: none;
 }
 .barra {
-    background-image: linear-gradient(to bottom. black 0%, grey 100%)
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(153,0,18,1) 46%, rgba(0,0,0,1) 100%);
     width: 100%;
     display: flex;
     justify-content: center;
