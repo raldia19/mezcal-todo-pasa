@@ -158,8 +158,14 @@ h3 {
     margin-right: 20px;
 }
 .p1 {
-    background-color: darkred;
+    background-color: black;
+    animation-name: cambio;
+    animation-duration: 4s;
     border-radius: 15px;
+}
+@keyframes cambio {
+    from {background-color: black;}
+    to {background-color: darkred;}
 }
 .p1 img {
     padding: 40px;
