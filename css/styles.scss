@@ -1,0 +1,315 @@
+$color-vino: darkred;
+$color-negro: black;
+$color-blanco: white;
+$padding-fotos: 40px;
+$texto-centrado: center;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $color-blanco;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+    list-style: none;
+    ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left:  0;
+        width: 200px;
+    }
+}
+.barra {
+    background: $color-negro;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(153,0,18,1) 46%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    a {
+        color: $color-blanco;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    img {
+        width: 16px;
+        height: 16px;
+        margin-right: 3px;
+        vertical-align: middle;
+    }
+}
+.logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: baseline;
+    justify-items: center;
+    li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    a {
+        color: $color-vino;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .menu {
+        margin-bottom:  10px;
+            li {
+                position: relative;
+                vertical-align: top;
+                display: inline-block;
+            }
+            li:hover ul {
+                display: block;
+            }
+            li:hover a {
+                color: red;
+                text-decoration: none;
+            }
+    }    
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: lightgray;
+    border-radius: 15px;
+    align-items: center;
+    .encabezado {
+        padding: $padding-fotos;
+    }
+    .descripcion {
+        color: #333333;
+        font-size: 24px;
+        text-align: $texto-centrado;
+    }
+    .foto-principal {
+        padding: $padding-fotos;
+            img {
+                border-radius: 15px;
+                justify-items: center;
+                width: 380px;
+            }
+    }
+}
+h1, h2, h3 {
+    color: $color-vino;
+    text-align: $texto-centrado;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+}
+.ver-productos {
+    background-color: $color-vino;
+    border-radius: 15px;
+    padding: 8px;
+    margin-left: 18%;
+    a {
+        color: $color-blanco;
+        font-size: 24px;
+        text-decoration: none;
+    }
+}
+.secundaria {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: $color-blanco;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    .tradicion {
+        color: #333333;
+        font-size: 20px;
+        text-align: left;
+        padding: 0px;
+            a {
+                color: $color-vino;
+                text-decoration: none;
+            }
+    }
+}
+#productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    background-color: $color-blanco;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    align-content: center;
+    .p1 {
+        background-color: $color-vino;
+        border-radius: 15px;
+            img {
+                padding: $padding-fotos;
+                margin: 40px;
+                margin-bottom: 0;
+            }
+    }
+    .sub-producto {
+        font-style: italic;
+        color: $color-blanco;
+        font-size: 18px;
+        text-align: $texto-centrado;
+    }
+    .precio {
+        color: $color-blanco;
+        font-size: 21px;
+        text-align: $texto-centrado;
+    }
+    .anadir {
+        background-color: $color-blanco;
+        border-radius: 15px;
+        padding: 8px;
+        font-size: 18px;
+        color: $color-vino;
+        margin: 40px;
+            a {
+                color: $color-vino;
+                text-decoration: none;
+            }
+    }
+}
+#productos2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    background-color: $color-blanco;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    .p1 {
+        background-color: $color-vino;
+        border-radius: 15px;
+            img {
+                padding: $padding-fotos;
+                margin: 40px;
+                margin-bottom: 0;
+            }
+    }
+    .sub-producto {
+        font-style: italic;
+        color: $color-blanco;
+        font-size: 18px;
+        text-align: $texto-centrado;
+    }
+    .precio {
+        color: $color-blanco;
+        font-size: 21px;
+        text-align: $texto-centrado;
+    }
+    .anadir {
+        background-color: $color-blanco;
+        border-radius: 15px;
+        padding: 8px;
+        font-size: 18px;
+        color: $color-vino;
+        margin: 40px;
+            a {
+                color: $color-vino;
+                text-decoration: none;
+            }
+    }
+}
+footer {
+    display: flex;
+    width: 100%;
+    background-color: $color-negro;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-top: 20px;
+}
+.copyright {
+    font-size: 16px;
+    color: lightgray;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.subtitulo-2 {
+    color: grey;
+    font-size: 21px;
+    text-align: $texto-centrado;
+}
+.cursiva {
+    color: $color-negro;
+    font-size: 18px;
+    text-align: $texto-centrado;
+}
+.formulario {
+    color: #333333;
+    font-size: 18px;
+    text-align: left;
+    padding: $padding-fotos;
+}
+
+@media (min-width: 900px) {
+    .logo {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20%;
+        margin-left: 40px;
+        margin-right: 10px;
+        justify-items: left;
+    }
+    .hero {
+        grid-template-columns: 2fr 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .ver-productos {
+        margin-left: 30%;
+        margin-top: 50px;
+    }
+    .secundaria {
+        grid-template-columns: 2fr 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+        .tradicion {
+            padding-left: $padding-fotos;
+            padding-right: $padding-fotos;
+        }  
+    }
+    #productos {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        padding: 10px;
+        align-content: center;
+        .p1 img {
+            padding: 20px;
+            margin: 10px;
+        }  
+    }                                   
+    #productos2 {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+        padding: 10px;
+        align-content: center;
+        align-items: center;
+        margin-left: 220px;
+        margin-right: 220px;
+        .p1 img {
+            padding: 20px;
+            margin: 10px;
+        }  
+    }
+    .mapa {
+        padding: 0;
+        padding-left: 20%;
+    }
+}
