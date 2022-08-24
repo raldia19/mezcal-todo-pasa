@@ -1,5 +1,6 @@
 $color-vino: darkred;
 $color-negro: black;
+$color-marron: #a16954;
 $color-blanco: white;
 $padding-fotos: 40px;
 $texto-centrado: center;
@@ -258,6 +259,27 @@ footer {
     font-size: 18px;
     text-align: left;
     padding: $padding-fotos;
+}
+
+@mixin fondo ($fondo) {
+    background-color: $fondo;
+        border-radius: 15px;
+            img {
+                padding: $padding-fotos;
+                margin: 40px;
+                margin-bottom: 0;
+            }  
+}
+.prod1 {
+    @include fondo($color-vino)
+}
+
+.prod2 {
+    @include fondo($color-marron)
+}
+
+.prod3 {
+    @include fondo($color-negro)
 }
 
 @media (min-width: 900px) {

@@ -225,6 +225,30 @@ footer {
   text-align: left;
   padding: 40px; }
 
+.prod1 {
+  background-color: darkred;
+  border-radius: 15px; }
+  .prod1 img {
+    padding: 40px;
+    margin: 40px;
+    margin-bottom: 0; }
+
+.prod2 {
+  background-color: #a16954;
+  border-radius: 15px; }
+  .prod2 img {
+    padding: 40px;
+    margin: 40px;
+    margin-bottom: 0; }
+
+.prod3 {
+  background-color: black;
+  border-radius: 15px; }
+  .prod3 img {
+    padding: 40px;
+    margin: 40px;
+    margin-bottom: 0; }
+
 @media (min-width: 900px) {
   .logo {
     grid-template-columns: 1fr 1fr;
