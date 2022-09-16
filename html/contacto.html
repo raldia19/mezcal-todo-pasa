@@ -15,95 +15,94 @@
   <body>
     <header>
       <div class="barra">
-        <img src="../img/telefono.png" alt="Teléfono" title="Llámanos" width="20px">
+        <img src="../img/telefono.png" alt="Teléfono" title="Llámanos" width="20">
         <a href="tel:4428740398">442 874 0398</a>
-        <img src="../img/correo.png" alt="Correo Electrónico" title="Escríbenos" width="20px"> 
+        <img src="../img/correo.png" alt="Correo Electrónico" title="Escríbenos" width="20"> 
         <a href="mailto:ventas@todopasa.com">ventas@todopasa.com</a>
       </div>
       <div class="logo">
         <div>
-          <a href="../index.html" target="_self"><img src="../img/logo.jpg" alt="Logotipo Todo Pasa" title="Todo Pasa" width="180px"></a>
+          <a href="../index.html"><img src="../img/logo.jpg" alt="Logotipo Todo Pasa" title="Todo Pasa" width="180"></a>
         </div>
         <nav>
           <ul class="menu">
-            <li><a href="../index.html" target="_self">Inicio</a></li>
-            <li><a href="quienes-somos.html" target="_self">Quiénes Somos</a></li>
-            <li class="productos"><a href="#productos" target="_self">Productos</a>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li class="productos"><a href="#productos">Productos</a>
             <ul class="submenu">
-              <li><a href="300ml.html" target="_self">Mezcal de 300 ml</a></li>
-              <li><a href="750ml.html" target="_self">Mezcal de 750 ml</a></li>
-              <li><a href="especial.html" target="_self">Mezcal Especial</a></li>
+              <li><a href="300ml.html">Mezcal de 300 ml</a></li>
+              <li><a href="750ml.html">Mezcal de 750 ml</a></li>
+              <li><a href="especial.html">Mezcal Especial</a></li>
             </ul></li>
-            <li><a href="contacto.html" target="_self">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </div>
-      <hr>
+
     </header>
     <main>
-      <section class="hero">
+      <section class="herocontacto">
         <div class="encabezado">
           <h1>Contacto</h1>
-          <p class="tradicion">Teléfono: <a href="tel:4428740398">442 874 0398</a></p>
-          <p class="tradicion">Correo: <a href="mailto:ventas@mezcaltodopasa.com">ventas@mezcaltodopasa.com</a></p>
-          <p class="tradicion">Santiago Matatlán, Oaxaca, en el distrito de Tlacolula, México.</p>
+          <p class="contacto">Teléfono: <a href="tel:4428740398">442 874 0398</a></p>
+          <p class="contacto">Correo: <a href="mailto:ventas@mezcaltodopasa.com">ventas@mezcaltodopasa.com</a></p>
+          <p class="contacto">Santiago Matatlán, Oaxaca, en el distrito de Tlacolula, México.</p>
             <div class="mapa">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15272.750041621795!2d-96.3896098329526!3d16.866616335892207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c0cafd12f80139%3A0x47085386871bad2!2s70440%20Santiago%20Matatl%C3%A1n%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1658424914863!5m2!1ses-419!2smx" width="360" height="480" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15272.750041621795!2d-96.3896098329526!3d16.866616335892207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c0cafd12f80139%3A0x47085386871bad2!2s70440%20Santiago%20Matatl%C3%A1n%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1658424914863!5m2!1ses-419!2smx" width="360" height="480" style="border:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="formulario">
           <h2>Formulario de Contacto</h2>
-          <form action="">
-              <label for="nombre">Nombre:<br /></label>
+          <form action="" class="formulario">
+              <label for="nombre" class="contacto">Nombre:</label>
               <input size="40" type="text" id="nombre" name="nombre">
-              <label for="apellido"><br />Apellido:<br /></label>
-              <input size="40" type="text" id="apellido" name="apellido"><br />
-              <label for="telefono">Teléfono:<br /></label>
+              <label for="apellido" class="contacto">Apellido:</label>
+              <input size="40" type="text" id="apellido" name="apellido">
+              <label for="telefono" class="contacto">Teléfono:</label>
               <input size="40" type="tel" id="telefono" name="telefono">
-              <label for="correo"><br />Correo Electrónico:<br /></label>
-              <input size="40" type="email" id="correo" name="correo"><br />
-              <p><br />¿Qué mezcal le interesa?<br /></p>
-              <select name="mezcales" id="mezcales">
+              <label for="correo" class="contacto">Correo Electrónico:</label>
+              <input size="40" type="email" id="correo" name="correo">
+              <span><br />¿Qué mezcal le interesa?</span>
+              <select name="mezcales" id="mezcales" class="contacto">
                   <option value="300ml">300 ml</option>
                   <option value="750ml">750 ml</option>
                   <option value="especial">especial</option>
               </select>
-              <p>¿Cómo quiere recibir sus productos?</p>
+              <span class="contacto">¿Cómo quiere recibir sus productos?</span>
               <input type="radio" id="domicilio" name="entrega" value="Domicilio">
-              <label for="domicilio">A Domicilio</label><br />
+              <label for="domicilio" class="contacto">A Domicilio</label>
               <input type="radio" id="pickup" name="entrega" value="Recoger">
-              <label for="pickup">Recoger en Tienda</label><br />
-              <label for="mensaje"><br />Comentarios:</label><br />
-              <textarea id="mensaje" name="mensaje" rows="4" cols="40">
-                  Escriba su mensaje.
-              </textarea><br />
+              <label for="pickup" class="contacto">Recoger en Tienda</label>
+              <label for="mensaje" class="contacto"><br />Comentarios:</label>
+              <textarea id="mensaje" name="mensaje" rows="4" cols="40" class="contacto">
+              </textarea>
               <input type="submit" id="enviar" name="enviar" value="Enviar">
             </form>
           </div>
       </section>
     </main>
-    <hr>
+
     <section id="productos">
       <div class="prod1">
-        <img src="../img/mezcal-300.jpg" alt="Mezcal 300 ml" title="Mezcal 300 ml" width="250px">
-        <h3>Mezcal de 300 ml</h3>
+        <img src="../img/mezcal-300.jpg" alt="Mezcal 300 ml" title="Mezcal 300 ml" width="250">
+        <h3 class="en-producto">Mezcal de 300 ml</h3>
         <p class="sub-producto">Presentación de 300 ml ideal para catas.</p>
         <h4 class="precio">$360.00</h4>
-        <button class="anadir"><a href="#" target="_self">Añadir al carrito</a></button>
+        <a href="300ml.html" class="anadir">Ver Más</a>
       </div>
       <div class="prod2">
-        <img src="../img/mezcal-750.jpg" alt="Mezcal 750 ml" title="Mezcal 750 ml" width="250px">
-        <h3>Mezcal de 750 ml</h3>
+        <img src="../img/mezcal-750.jpg" alt="Mezcal 750 ml" title="Mezcal 750 ml" width="250">
+        <h3 class="en-producto">Mezcal de 750 ml</h3>
         <p class="sub-producto">Presentación de 750 ml ideal para catas.</p>
         <h4 class="precio">$600.00</h4>
-        <button class="anadir"><a href="#" target="_self">Añadir al carrito</a></button>
+        <a href="750ml.html" class="anadir">Ver Más</a>
       </div>
       <div class="prod3">
-        <img src="../img/mezcal-especial.jpg" alt="Mezcal especial" title="Mezcal especial" width="250px">
-        <h3>Mezcal Especial</h3>
+        <img src="../img/mezcal-especial.jpg" alt="Mezcal especial" title="Mezcal especial" width="250">
+        <h3 class="en-producto">Mezcal Especial</h3>
         <p class="sub-producto">La reserva de Don Víctor.</p>
         <h4 class="precio">$1200.00</h4>
-        <button class="anadir"><a href="#" target="_self">Añadir al carrito</a></button>
+        <a href="especial.html" class="anadir">Ver Más</a>
       </div>
     </section>
     <footer>

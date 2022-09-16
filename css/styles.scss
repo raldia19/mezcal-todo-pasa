@@ -103,10 +103,31 @@ ul {
             }
     }
 }
-@keyframes animacion {
-    from {background-color: $color-vino;}
-    to {background-color: lightgrey;}
-  }
+.herocontacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: lightgray;
+    animation-name: animacion;
+    animation-duration: 4s;
+    border-radius: 15px;
+    align-items: center;
+    .encabezado {
+        padding: $padding-fotos;
+    }
+    .descripcion {
+        color: #333333;
+        font-size: 24px;
+        text-align: $texto-centrado;
+    }
+    .foto-principal {
+        padding: $padding-fotos;
+            img {
+                border-radius: 15px;
+                justify-items: center;
+                width: 380px;
+            }
+    }
+}
 h1, h2, h3 {
     color: $color-vino;
     text-align: $texto-centrado;
@@ -121,16 +142,29 @@ h3 {
     font-size: 24px;
 }
 .ver-productos {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
     background-color: $color-vino;
+    border: none;
     border-radius: 15px;
-    padding: 8px;
-    margin-left: 18%;
-    a {
-        color: $color-blanco;
-        font-size: 24px;
-        text-decoration: none;
-    }
+    box-shadow: 0 5px #666;
+  }
+  
+  .ver-productos:hover {
+    background-color: $color-marron;
+    color: #fff;
 }
+  
+  .ver-productos:active {
+    background-color: $color-vino;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 .secundaria {
     display: grid;
     grid-template-columns: 1fr;
@@ -155,18 +189,21 @@ h3 {
     row-gap: 20px;
     background-color: $color-blanco;
     padding: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
     align-items: center;
-    align-content: center;
     .prod1 .prod2 .prod3 {
         background-color: $color-vino;
         border-radius: 15px;
             img {
-                width: 40%;
-                margin: 100px;
-                margin-bottom: 0;
+                display: flex;
+                justify-content: center;
             }
+    }
+    .en-producto {
+        color: $color-blanco;
+        font-size: 24px;
+        text-align: $texto-centrado;
     }
     .sub-producto {
         font-style: italic;
@@ -180,19 +217,43 @@ h3 {
         text-align: $texto-centrado;
     }
     .anadir {
+        color: $color-vino;
+        text-decoration: none;
         background-color: $color-blanco;
         border-radius: 15px;
+        border: none;
         padding: 8px;
         font-size: 18px;
         color: $color-vino;
-        margin: 40px;
-        
-            a {
-                color: $color-vino;
-                text-decoration: none;
-            }
+    }
+    .anadir:hover {
+        background-color: $color-marron;
     }
 }
+.ver-productos {
+    padding: 10px 15px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: $color-vino;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #666;
+    }
+  
+  .ver-productos:hover {
+    background-color: $color-marron;
+    color: #fff;
+    }
+  
+  .ver-productos:active {
+    background-color: $color-vino;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    }
 #productos2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -212,6 +273,11 @@ h3 {
                 margin-bottom: 0;
             }
     }
+    .encabezadoproducto {
+        color: $color-blanco;
+        font-size: 24px;
+        text-align: $texto-centrado;
+    }
     .sub-producto {
         font-style: italic;
         color: $color-blanco;
@@ -226,15 +292,15 @@ h3 {
     .anadir {
         background-color: $color-blanco;
         border-radius: 15px;
+        border: none;
         padding: 8px;
         font-size: 18px;
         color: $color-vino;
         margin: 40px;
-            a {
-                color: $color-vino;
-                text-decoration: none;
-            }
+        color: $color-vino;
+        text-decoration: none;
     }
+    .anadir:hover {background-color: $color-marron}
 }
 footer {
     display: flex;
@@ -296,9 +362,9 @@ footer {
         padding: 10px;
         align-content: center;
         .prod1 .prod2 .prod3 img {
-            width: 40%;
-                margin: 100px;
-                margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            width: 50%;
             } 
     }
 }
@@ -314,6 +380,15 @@ footer {
         grid-template-columns: 2fr 1fr;
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .herocontacto {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     .ver-productos {
         margin-left: 30%;
@@ -321,8 +396,9 @@ footer {
     }
     .secundaria {
         grid-template-columns: 2fr 1fr;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         .tradicion {
             padding-left: $padding-fotos;
             padding-right: $padding-fotos;
@@ -354,5 +430,56 @@ footer {
     .mapa {
         padding: 0;
         padding-left: 20%;
+        border: none;
     }
+}
+
+div.galeria {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+
+  }
+  
+  div.galeria:hover {
+    border: 1px solid #777;
+  }
+  
+  div.galeria img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  .contacto {
+    color: #000000;
+    font-size: 24px;
+    text-align: left;
+    padding: 0px;
+        a {
+            color: $color-vino;
+            text-decoration: none;
+        }
+}
+.caracteristicas {
+    color: $color-vino;
+    font-size: 24px;
+    text-align: left;
+    padding: 0px;
+    padding-left: 80px;
+        a {
+            color: $color-vino;
+            text-decoration: none;
+        }
+}
+.formulario {
+    display: grid;
+    font-size: 24px;
+    text-align: left;
+    padding: 0px;
+    margin: auto;
 }
